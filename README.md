@@ -10,13 +10,13 @@ Returns a node list of the elements within **el** who's tag matches specified **
 
 Returns the first element within **el** who's tag matches specified **tag**.
 
-## elementsByClass(tag, el)
+## elementsByClass(class, el)
 
-Returns a node list of the elements within **el** who have a class matching specified **tag**.
+Returns a node list of the elements within **el** who have a class matching specified **class**.
 
-## elementByClass(tag, el)
+## elementByClass(class, el)
 
-Returns the first element within **el** who have a class matching specified **tag**.
+Returns the first element within **el** who have a class matching specified **class**.
 
 ## elementById(id)
 
