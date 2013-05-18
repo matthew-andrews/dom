@@ -1,0 +1,22 @@
+{
+  "name": "dom",
+  "version": "0.0.1",
+  "description": "Some simple performant dom helpers",
+  "main": "lib/dom.js",
+  "contributors": [
+    "Matt Andrews"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthew-andrews/dom.git"
+  },
+  "author": "Matt Andrews",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "~2.11.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "buster": "~0.6.2"
+  }
+}
