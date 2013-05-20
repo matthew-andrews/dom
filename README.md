@@ -1,6 +1,6 @@
 # dom
 
-Simple performant dom helpers with no dependencies.  Compiles and minifies down to less an one k.
+Simple performant dom helpers with no dependencies.  Compiles and minifies down to < 2kb.
 
 ## elementsByTag(tag, el)
 
