@@ -13,7 +13,7 @@ function elementsByTag(search, el) {
 
 function elementByTag(search, el) {
   var els = elementsByTag(search, el);
-  return els[0];
+  if (els.length > 0) return els[0];
 }
 
 function elementsByClass(search, el) {
@@ -22,7 +22,7 @@ function elementsByClass(search, el) {
 
 function elementByClass(search, el) {
   var els = elementsByClass(search, el);
-  return els[0];
+  if (els.length > 0) return els[0];
 }
 
 function elementById(id) {
