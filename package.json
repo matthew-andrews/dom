@@ -1,6 +1,6 @@
 {
   "name": "dom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Some simple performant dom helpers",
   "main": "lib/dom.js",
   "contributors": [

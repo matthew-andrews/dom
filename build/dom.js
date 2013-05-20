@@ -8,7 +8,7 @@ return (function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require
  */
 
 function elementsByTag(search, el) {
-  return el.getElementsByTagName(string);
+  return el.getElementsByTagName(search);
 }
 
 function elementByTag(search, el) {
@@ -29,7 +29,9 @@ function elementById(id) {
   return document.getElementById(id);
 }
 
-exports = {
+module.exports = {
+  elementsByTag: elementsByTag,
+  elementByTag: elementByTag,
   elementsByClass: elementsByClass,
   elementByClass: elementByClass,
   elementById: elementById
