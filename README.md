@@ -20,4 +20,4 @@ Returns the first element within **el** who have a class matching specified **cl
 
 ## elementById(id)
 
-Simply wraps document.getElementById.
+Simply wraps document.getElementById.  (Might remove this... it seems unnecessary...)
