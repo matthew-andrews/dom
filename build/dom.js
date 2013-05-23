@@ -7,6 +7,8 @@ return (function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require
  * @author Matt Andrews <matt@mattandre.ws>
  */
 
+var doc = document;
+
 function elementsByTag(search, el) {
   return (el || doc).getElementsByTagName(search);
 }
