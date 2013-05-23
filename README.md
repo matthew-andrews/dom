@@ -17,7 +17,3 @@ Returns a node list of the elements within **el** who have a class matching spec
 ## elementByClass(class, el)
 
 Returns the first element within **el** who have a class matching specified **class**, undefined if there is none.
-
-## elementById(id)
-
-Simply wraps document.getElementById.  (Might remove this... it seems unnecessary...)
