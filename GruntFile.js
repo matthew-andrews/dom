@@ -4,6 +4,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    buster: {},
+
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
@@ -26,6 +28,7 @@ module.exports = function(grunt) {
   // Load npm tasks
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-buster');
 
   // Load local tasks
   grunt.loadTasks('tasks');
