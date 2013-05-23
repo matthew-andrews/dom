@@ -8,7 +8,7 @@ return (function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require
  */
 
 function elementsByTag(search, el) {
-  return el.getElementsByTagName(search);
+  return (el || doc).getElementsByTagName(search);
 }
 
 function elementByTag(search, el) {
@@ -17,7 +17,7 @@ function elementByTag(search, el) {
 }
 
 function elementsByClass(search, el) {
-  return el.getElementsByClassName(search);
+  return (el || doc).getElementsByClassName(search);
 }
 
 function elementByClass(search, el) {
