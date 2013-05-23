@@ -1,6 +1,6 @@
 {
   "name": "dom",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "Some simple performant dom helpers",
   "main": "lib/dom.js",
   "contributors": [
@@ -12,6 +12,9 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/grunt buster"
+  },
+  "engines": {
+    "node": "*"
   },
   "author": "Matt Andrews",
   "license": "MIT",
