@@ -1,4 +1,4 @@
-# dom
+# dom [![Build Status](https://travis-ci.org/matthew-andrews/dom.png?branch=master)](https://travis-ci.org/matthew-andrews/dom)
 
 Simple performant dom helpers with no dependencies.  Compiles and minifies down to < 2kb.
 
