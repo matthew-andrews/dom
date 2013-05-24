@@ -38,6 +38,15 @@ buster.testCase('dom', {
     assert.equals('also correct', dom.elementByClass('test', container2).getAttribute('data'));
   },
 
+  "Should be able to find the first element of a particular tag in the document": function() {
+    assert.equals('container1', dom.elementByTag('div').getAttribute('id'));
+  },
+
+  "Should be able to find the first element of a particular tag within another element": function() {
+    var container2 = document.getElementById('container2');
+    assert.equals('also correct', dom.elementByTag('span', container2).getAttribute('data'));
+  },
+
   tearDown: function() {
     var container1 = document.getElementById('container1');
     var container2 = document.getElementById('container2');

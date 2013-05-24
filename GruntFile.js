@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     browserify: {
       build: {
-        src: 'lib/index.js',
+        src: 'lib/dom.js',
         dest: 'build/<%= pkg.name %>.js'
       },
       options: {
