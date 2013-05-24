@@ -6,6 +6,16 @@ module.exports = function(grunt) {
 
     buster: {},
 
+    browserify: {
+      build: {
+        src: 'lib/index.js',
+        dest: 'build/<%= pkg.name %>.js'
+      },
+      options: {
+        standalone: '<%= pkg.name %>'
+      }
+    },
+
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
@@ -26,6 +36,7 @@ module.exports = function(grunt) {
   });
 
   // Load npm tasks
+  grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-buster');
