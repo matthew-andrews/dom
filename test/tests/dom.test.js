@@ -11,6 +11,11 @@ buster.testCase('dom', {
       );
   },
 
+  "Singular functions return falsey when element not found": function() {
+    assert.isFalse(!!dom.elementByTag('nope'));
+    assert.isFalse(!!dom.elementByClass('nope'));
+  },
+
   "Should be able to find all the <div>s in the document": function() {
     assert.equals(4, dom.elementsByTag('div').length);
   },

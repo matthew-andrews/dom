@@ -15,7 +15,7 @@ function elementsByTag(search, el) {
 
 function elementByTag(search, el) {
   var els = elementsByTag(search, el);
-  if (els.length > 0) return els[0];
+  return els && els[0];
 }
 
 function elementsByClass(search, el) {
@@ -24,7 +24,7 @@ function elementsByClass(search, el) {
 
 function elementByClass(search, el) {
   var els = elementsByClass(search, el);
-  if (els.length > 0) return els[0];
+  return els && els[0];
 }
 
 module.exports = {
